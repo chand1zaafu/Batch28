@@ -13,3 +13,5 @@ git push -u origin master
 
 git remote add origin https://github.com/jayramrout/Batch28.git
 git push -u origin master
+
+Thanks for Setting up your github !!!
