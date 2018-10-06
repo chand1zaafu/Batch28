@@ -1,6 +1,7 @@
 package operator.relationoperator;
 
 public class BooleanLogicalOperator2 {
+
     public static void main(String[] args) {
         int a = 16;
         int b = 5;
@@ -12,7 +13,6 @@ public class BooleanLogicalOperator2 {
         System.out.println("Value of a : "+ a);
         System.out.println("Value of b : "+ b);*/
 
-
         a = 10;
         b = 5;
         if((a > 15) && (b++ > 10)){
@@ -22,11 +22,13 @@ public class BooleanLogicalOperator2 {
         System.out.println("Value of a : "+ a);
         System.out.println("Value of b : "+ b);
 
-        boolean one = a > 15;
+        /*boolean one = a > 15;
         boolean two = b > 10;
+
+
         if(one & two){
             System.out.println("help");
-        }
+        }*/
     }
 }
 

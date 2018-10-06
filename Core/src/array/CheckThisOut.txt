@@ -1,0 +1,8 @@
+boolean isTrue = i < 10;
+
+        while(isTrue){
+            System.out.print(i+" ");
+            i++;
+        }
+
+Find out why this loop is continuously looping...

@@ -39,6 +39,8 @@ public class RelationalOperator {
         }else{
 
         }
+
+
         /**
          * >= : greater than equals
          * <= : less than equals
@@ -64,5 +66,28 @@ public class RelationalOperator {
         }
          */
 
+
+
     }
 }
+
+
+
+
+/*
+class Conditions {
+    public static void main(String[] args) {
+        int age;
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Enter your age");
+
+        age = obj.nextInt();
+        if (age >= 18) {
+            System.out.println("you are eligible for voting");
+        } else {
+            System.out.println("you are not eligible for voting");
+        }
+    }
+}
+*/
+
