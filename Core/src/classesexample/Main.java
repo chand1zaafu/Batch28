@@ -4,50 +4,64 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Student danny = new Student();
-        Student john = new Student(); // this creates an object in the memory
+//        Student danny = new Student();
 
-        john.name = "John";
-        john.age = 34;
-        john.height = 5.5f;
-        john.address1 = " Pete Street";
-        john.address2 = "Lane 1";
-        john.pin = 55555;
-        john.state = "NJ";
-        john.country = "USA";
+        Student johnObject = new Student(); // this creates an object in the memory
 
-//        Student johnRef = john;
+        johnObject.setName("John");
+        johnObject.setAge(35);
+        johnObject.setHeight(4.5f);
 
-        Student tom = new Student(); // this creates an object in the memory
+        Address johnAddress = new Address();
+        HeadPhone johnHeadPhone = new HeadPhone();
+        johnHeadPhone.brand = "Sony";
 
-        tom.name = "Tom";
-        tom.age = 35;
-        tom.height = 6.5f;
-        tom.address1 = "Roland Street";
-        tom.address2 = "Lane 10";
-        tom.pin = 55545;
-        tom.state = "VA";
-        tom.country = "USA";
+        // TODO : what should i be doing in this line to associate headphone with John ?
+        johnObject.setHeadPhone(johnHeadPhone);
 
+        johnAddress.address1 = " Pete Street";
+        johnAddress.address2 = "Lane 1";
+        johnAddress.pin = 55555;
+        johnAddress.state = "NJ";
+        johnAddress.country = "USA";
 
-        System.out.println(john.age+" "+ john.name);
-        System.out.println(tom.age+" "+ tom.name);
-        System.out.println(danny.age+" "+ danny.name);
+//        johnObject.address = johnAddress;
 
-//        System.out.println(tom);
-//        System.out.println(danny);
+//        Student johnRef = johnObject;
+
+        Student tomObject = new Student(); // this creates an object in the memory
+
+//        tomObject.name = "Tom";
+//        tomObject.age = 35;
+//        tomObject.height = 6.5f;
+
+        Address tomAddress = new Address();
+
+        tomAddress.address1 = "Roland Street";
+        tomAddress.address2 = "Lane 10";
+        tomAddress.pin = 55545;
+        tomAddress.state = "VA";
+        tomAddress.country = "USA";
+//        tomObject.address = tomAddress;
+
+//        System.out.println(johnObject.age+" "+ johnObject.name);
+//        System.out.println(tomObject.age+" "+ tomObject.name);
+
+        System.out.println("*****Address******");
+
+//        System.out.println(johnObject.address.address1);
+//        System.out.println(johnObject.address.address2);
+
+//        System.out.println(tomObject.address.address1);
+//        System.out.println(tomObject.address.address2);
 
     }
 }
 
-class Student {
-    String name;
-    int age;
-    float height;
-    String address1;
-    String address2;
-    int pin;
-    String state;
-    String country;
+/**
+ * This class is a template
+ */
 
-}
+
+
+
