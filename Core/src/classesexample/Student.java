@@ -4,11 +4,35 @@ package classesexample;
  * public private default protected
  */
 public class Student {
+    private int id;
     private String name;
     private int age;
     private float height;
     private Address address;
     private HeadPhone headPhone;
+
+    public Student(){
+    }
+
+    public Student(int idX){
+        id = idX;
+    }
+
+    public Student(int id , String name) {
+//        this.id = id;
+        this(id);
+        this.name = name;
+    }
+
+    public Student(int id , String name , int age){
+        this(id,name);
+        this.age = age;
+    }
+
+    public Student(int id , String name , int age, float height){
+        this(id,name,age);
+        this.height = height;
+    }
 
     public String getName() {
         return name;
@@ -56,6 +80,16 @@ public class Student {
         }
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+
+
     /*
     public static void main(String[] args) {
         Student student = new Student();
@@ -63,5 +97,12 @@ public class Student {
     }
     */
 
+    /*public void printInfo(){
+        System.out.println(this.getId() +" "+ this.getName() +" "+ this.getHeight());
+    }*/
 
+
+    public String toString() {
+        return (this.getId() +" "+ this.getName() +" "+ this.getHeight());
+    }
 }

@@ -37,7 +37,6 @@ public class Main {
         main.printInfo(student1);
         main.printInfo(student2);
 
-
         String message = "Hello ";
         String returnedMessage = main.getMessage(student);
 
@@ -67,6 +66,10 @@ public class Main {
         return message;
     }
 
+    /**
+     *
+     * @param student
+     */
     public void printInfo(Student student){
         System.out.println("Printing information about "+ student.getName()+"*****");
         System.out.println("Name : "+ student.getName());

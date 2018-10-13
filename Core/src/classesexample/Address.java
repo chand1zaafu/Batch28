@@ -6,4 +6,5 @@ public class Address {
     int pin;
     String state;
     String country;
+
 }
