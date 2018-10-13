@@ -22,8 +22,6 @@ public class MethodOverloading {
         a  = 20;
 
         final int b = 34;
-        b = 50;
-
     }
 
 
